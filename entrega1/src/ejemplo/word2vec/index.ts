@@ -1,7 +1,7 @@
 import w2v from 'word2vec';
-import * as os from 'os';
-import * as path from 'path';
-import * as fs from 'fs';
+import * as os from 'node:os';
+import * as path from 'node:path';
+import * as fs from 'node:fs';
 
 const corpusPath = new URL('../corpus.txt', import.meta.url).pathname;
 const modelPath = new URL('./vectors.txt', import.meta.url).pathname;
